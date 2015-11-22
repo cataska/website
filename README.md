@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/clojure-tw/website.svg?branch=master)](https://travis-ci.org/clojure-tw/website)
 [![License](http://img.shields.io/badge/license-GPL-blue.svg?style=flat)](http://www.opensource.org/licenses/gpl-license.html)
 [![waffle.io](https://badge.waffle.io/clojure-tw/website.png?label=ready&title=Ready)](http://waffle.io/clojure-tw/website)
+[![Join the chat at https://gitter.im/clojure-tw/gossip](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/clojure-tw/gossip?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 這是 http://clojure-tw.github.io 的網站，使用 [hoplon](http://hoplon.io) 來製作，
 原始碼請見: https://github.com/clojure-tw/website
