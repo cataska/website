@@ -33,7 +33,7 @@
        (h3 "Resources")
        (ul
         (li (a :href "https://twitter.com/clojuretw" "Twitter"))
-        ;; (li (a :href "https://gitter.im/clojure-tw/clojure-tw" "Gitter"))
+        (li (a :href "https://gitter.im/clojure-tw/gossip" "Gitter"))
         (li (a :href "https://www.facebook.com/groups/clojure.taiwan" "Facebook"))
         (li (a :href "http://www.meetup.com/Clojure-tw/" "Meetup"))
         )
