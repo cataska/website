@@ -12,22 +12,15 @@
 ;; http://themefisher.com/themes/small-apps/
 ;; http://www.columbusclojure.com/
 ;; http://www.codeandsupply.co/
-
-(defelem banner []
-  (header
-   (div :class "header-content"
-        (div :class "header-content-inner"
-             (h1 "Clojure Taiwan")
-             (hr)
-             )))
-  )
+;; http://www.linux.org.tw/
 
 (defelem participation-child
-  [{:keys [link style text-color text]}]
+  [{:keys [link color text]}]
   (li
-   (a :href link :style style
+   (a :href link
+      :style (str "background: linear-gradient(#fff 1em, #fff calc(100% - 5px), " color " calc(100% - 5px));")
       (div :class "info"
-           (strong :style text-color text)))))
+           (strong :style (str "color: " color ";") text)))))
 
 (html
  (generic-head)
@@ -42,47 +35,29 @@
             (li (a :href "/" "關於我們"))
             ))
           )
-   (main
-  ;;  (div :class "slogan" (h2 "Clojure 台灣社群"))
-    )
+  (main
+   ;;  (div :class "slogan" (h2 "Clojure 台灣社群"))
+   )
 
   (section :id "participation"
            (h2 "社群參與")
            (div :class "content"
                 (ul :class "distro"
                     (participation-child {:link "https://telegram.me/joinchat/BN4J_AKwngu5hBPkRo5gYw"
-                                          :style "background: linear-gradient(#fff 1em, #fff calc(100% - 5px), #1793D1 calc(100% - 5px));"
-                                          :text-color "color: #1793D1;"
+                                          :color "#1793D1"
                                           :text "Telegram"})
                     (participation-child {:link "https://www.facebook.com/groups/clojure.taiwan"
-                                          :style "background: linear-gradient(#fff 1em, #fff calc(100% - 5px), #4870BC calc(100% - 5px));"
-                                          :text-color "color: #4870BC;"
+                                          :color "#4870BC"
                                           :text "Facebook"})
                     (participation-child {:link "https://twitter.com/clojuretw"
-                                          :style "background: linear-gradient(#fff 1em, #fff calc(100% - 5px), #4870BC calc(100% - 5px));"
-                                          :text-color "color: #4870BC;"
+                                          :color "#4870BC"
                                           :text "Twitter"})
                     (participation-child {:link "http://www.meetup.com/Clojure-tw/"
-                                          :style "background: linear-gradient(#fff 1em, #fff calc(100% - 5px), #DD4814 calc(100% - 5px));"
-                                          :text-color "color: #DD4814;"
+                                          :color "#DD4814"
                                           :text "Meetup"})
                     )
                 )
            )
-
-  ;; banner
-  ;;(banner)
-  ;; (div :class "container"
-  ;;      (br) (br) (br)
-  ;;      (h3 "Resources")
-  ;;      (ul
-  ;;       (li (a :href "https://telegram.me/joinchat/BN4J_AKwngu5hBPkRo5gYw" "Telegram Invite Link"))
-  ;;       (li (a :href "https://twitter.com/clojuretw" "Twitter"))
-  ;;       (li (a :href "https://gitter.im/clojure-tw/gossip" "Gitter"))
-  ;;       (li (a :href "https://www.facebook.com/groups/clojure.taiwan" "Facebook"))
-  ;;       (li (a :href "http://www.meetup.com/Clojure-tw/" "Meetup"))
-  ;;       )
-  ;;      )
 
   (footer
    (a :href "http://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW" :class "license"
