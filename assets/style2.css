@@ -1,0 +1,55 @@
+* { font-size: 16px; }
+
+body { margin: 0; padding: 0; display: flex; min-height: 100vh; flex-direction: column; }
+
+header { position: fixed; z-index: 100; top: 0; width: 90%; padding: .5rem 5% 0; background-color: #fff; border-bottom: 1px solid #5d4037; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5); }
+header h1 { display: inline-block; margin: 0; }
+header h1 a { display: block; padding: 0.75rem; color: #795548; text-shadow: 0 1px #d7ccc8; text-decoration: none; font-size: 1.5rem; }
+header nav { display: inline-block; float: right; margin: 0 1rem; }
+header nav ul { margin: 0; padding: 0; list-style-type: none; }
+header nav ul li { display: inline-block; margin: 0 1rem; }
+header nav ul li a { display: block; padding: 1rem .5rem 1.5rem; color: #795548; font-size: 1rem; font-weight: 600; text-decoration: none; }
+header nav ul li a:hover { box-shadow: 0px -3px 0px #795548 inset; transition-duration: .2s; }
+
+footer { padding: 1rem 4rem; height: 42px; background-color: #444444; color: #ccc; text-align: center; }
+footer .license { float: right; opacity: 0.5; }
+footer div { padding-top: 0.75rem; }
+footer div a { float: left; display: block; color: #ccc; text-decoration: none; }
+
+main { flex: 1; display: flex; flex-direction: column; margin-top: 4.25rem; }
+main > section { flex: 1; }
+main .slogan { background: #2A2929 url("/images/slogan_bg.png") top center no-repeat; }
+main .slogan div { background-color: rgba(121, 85, 72, 0.925); padding: 5rem 0 3rem; }
+main .slogan div text-style, main .slogan div h2 { text-shadow: 0 1px 1px #777; letter-spacing: .25rem; text-align: center; }
+main .slogan div h2 { position: relative; top: -2rem; color: #fff; font-size: 3rem; font-weight: 500; }
+main section { padding: 3rem 0; text-align: center; }
+main section h2, main section h3 { display: inline-block; font-size: 1.75rem; color: #795548; }
+main section:nth-child(odd) { background-color: #F8F5F0; }
+main section:nth-child(odd) h2 { color: #555555; }
+main section:nth-child(even) { background-color: #fff; }
+
+#news .content { padding: 1.5rem; }
+#news .content ul { background-color: #fff; margin-top: 2rem; padding: 1rem 2rem 1rem; width: 50%; display: inline-block; text-align: left; list-style-type: none; }
+#news .content ul li { line-height: 3rem; border-bottom: 1px solid #ccc; }
+#news .content ul li:last-child { text-align: center; }
+#news .content ul li:last-child a { display: block; color: #ccc; text-decoration: none; }
+
+#tutorial .content ul { padding: 0; list-style-type: none; }
+#tutorial .content ul li { display: inline-block; }
+#tutorial .content ul li a { display: block; margin: 0 2rem; box-shadow: 7px 7px 0 #454545; }
+#tutorial .content ul li a img { vertical-align: bottom; }
+
+#participation, #community .content { text-align: center; }
+#participation ul, #community .content ul { padding: 0 0 2rem; margin: 0 auto; list-style-type: none; }
+#participation ul.distro li, #community .content ul.distro li { display: inline-block; margin: .5rem; min-width: 12.5%; }
+#participation ul.distro li a, #community .content ul.distro li a { display: block; padding: 1rem; text-decoration: none; }
+#participation ul.distro li a div strong, #community .content ul.distro li a div strong { font-size: 1.5rem; }
+#participation ul.community, #participation ul.other, #community .content ul.community, #community .content ul.other { width: 50%; text-align: left; }
+#participation ul.community li, #participation ul.other li, #community .content ul.community li, #community .content ul.other li { border-bottom: 1px solid #ccc; margin: 0 1rem; }
+#participation ul.community li:first-child, #participation ul.other li:first-child, #community .content ul.community li:first-child, #community .content ul.other li:first-child { border-top: 1px solid #ccc; }
+#participation ul.community li a, #participation ul.other li a, #community .content ul.community li a, #community .content ul.other li a { display: block; padding: 1rem; font-size: 1.25rem; line-height: 1.5rem; text-decoration: none; }
+#participation ul.community li a .title, #participation ul.other li a .title, #community .content ul.community li a .title, #community .content ul.other li a .title { color: #694a3e; font-weight: 600; }
+#participation ul.community li a .description, #participation ul.other li a .description, #community .content ul.community li a .description, #community .content ul.other li a .description { color: #454545; }
+
+#about ul { display: inline-block; text-align: left; }
+#about a { color: #795548; }

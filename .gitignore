@@ -4,3 +4,4 @@
 /.repl-history
 /.gh-pages/
 /assets/vendors/
+.DS_Store

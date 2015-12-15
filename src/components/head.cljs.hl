@@ -19,11 +19,12 @@
    ;; favicon
    (favicon)
    ;; jquery
-   (script :src "vendors/jquery/dist/jquery.min.js")
+   ;; (script :src "vendors/jquery/dist/jquery.min.js")
    ;; bootstrap
-   (link :href "vendors/bootstrap/dist/css/bootstrap.min.css" :rel "stylesheet")
+   ;; (link :href "vendors/bootstrap/dist/css/bootstrap.min.css" :rel "stylesheet")
    ;;(script :src "vendors/bootstrap/dist/")
-   (link :href "style.css" :rel "stylesheet")
+   ;; (link :href "style.css" :rel "stylesheet")
+   (link :href "style2.css" :rel "stylesheet")
    children
    ;; google analytics
    (google-analytics)))
