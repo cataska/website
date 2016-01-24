@@ -1,6 +1,7 @@
 (page "index.html"
       (:require [components.head :refer [generic-head]]
                 [components.navbar :refer [navbar-layout]]
+                [goog.crypt.base64 :as base64]
                 ))
 
 ;; ref:
@@ -43,7 +44,7 @@
            (h2 "社群參與")
            (div :class "content"
                 (ul :class "distro"
-                    (participation-child {:link "https://telegram.me/joinchat/BN4J_AKwngu5hBPkRo5gYw"
+                    (participation-child {:link (base64/decodeString "aHR0cHM6Ly90ZWxlZ3JhbS5tZS9qb2luY2hhdC9CTjRKX0FLd25ndTVoQlBrUm81Z1l3Cg==")
                                           :color "#1793D1"
                                           :text "Telegram"})
                     (participation-child {:link "https://www.facebook.com/groups/clojure.taiwan"
