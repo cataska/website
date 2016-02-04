@@ -5,20 +5,18 @@
                  [weasel                    "0.7.0"  :scope "test"]
                  [org.clojure/tools.nrepl   "0.2.12" :scope "test"]
                  [adzerk/boot-reload        "0.4.2"]
-                 [hoplon/boot-hoplon        "0.1.13"]
-                 [hoplon/hoplon             "6.0.0-alpha11"]
-                 [hoplon/twitter-bootstrap  "0.2.0"]
+                 [reagent                   "0.6.0-alpha"]
                  [org.clojure/clojure       "1.8.0"]
                  [org.clojure/clojurescript "1.7.228"]
                  [tailrecursion/boot-jetty  "0.1.0"]]
- :source-paths #{"src"}
- :asset-paths  #{"assets"})
+ :source-paths   #{"src"}
+ :resource-paths #{"resources"}
+ :asset-paths    #{"assets"})
 
 (require
  '[adzerk.boot-cljs         :refer [cljs]]
  '[adzerk.boot-cljs-repl    :refer [cljs-repl start-repl]]
  '[adzerk.boot-reload       :refer [reload]]
- '[hoplon.boot-hoplon       :refer [hoplon prerender]]
  '[tailrecursion.boot-jetty :refer [serve]])
 
 (deftask dev
@@ -27,7 +25,6 @@
   (comp
    (watch)
    (speak)
-   (hoplon)
    (reload)
    (cljs-repl)
    (cljs)
@@ -37,6 +34,4 @@
   "Build clojure-tw for production deployment."
   []
   (comp
-   (hoplon)
-   (cljs :optimizations :advanced)
-   (prerender)))
+   (cljs :optimizations :advanced)))
