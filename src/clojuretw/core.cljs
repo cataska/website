@@ -54,7 +54,7 @@
    [community-section]])
 
 (defn app []
-  [:div
+  [:div#container
    [header]
    [main]
    [footer]])
