@@ -28,7 +28,7 @@ main section:nth-child(odd) { background-color: #F8F5F0; }
 main section:nth-child(odd) h2 { color: #555555; }
 main section:nth-child(even) { background-color: #fff; }
 
-div #container { display: flex; min-height: 100vh; flex-direction: column; }
+#container { display: flex; min-height: 100vh; flex-direction: column; }
 
 #news .content { padding: 1.5rem; }
 #news .content ul { background-color: #fff; margin-top: 2rem; padding: 1rem 2rem 1rem; width: 50%; display: inline-block; text-align: left; list-style-type: none; }
