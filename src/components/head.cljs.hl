@@ -8,7 +8,7 @@
   (link :rel "canonical" :href "http://clojure.tw"))
 
 (defelem google-analytics []
-  (script :src "assets/google-analytics.js"))
+  (script :src "google-analytics.js"))
 
 (defelem generic-head
   [children]
